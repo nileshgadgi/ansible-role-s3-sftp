@@ -1,0 +1,92 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: Ansible Role S3 SFTP
+
+# License of this project
+license: "MIT"
+
+# Canonical GitHub repo
+github_repo: clouddrove/ansible-role-s3-sftp
+
+# Badges to display
+badges:
+  - name: "Ansible"
+    image: "https://img.shields.io/badge/Ansible-2.9-green?style=flat&logo=ansible"
+    url: "https://www.ansible.com"
+  - name: "Licence"
+    image: "https://img.shields.io/badge/License-MIT-blue.svg"
+    url: "LICENSE.md"
+  - name: "Distribution"
+    image: "https://img.shields.io/badge/ubuntu-23.x-orange?style=flat&logo=ubuntu"
+    url: "https://ubuntu.com/"
+  - name: "Actions"
+    image: "https://github.com/clouddrove/ansible-role-s3-sftp/actions/workflows/lint.yml/badge.svg"
+    url: "https://github.com/clouddrove/ansible-role-s3-sftp/actions/workflows/lint.yml"
+
+# Prerequesties to display
+# yamllint disable
+prerequesties:
+  - name: "Ansible2.9"
+    url: "https://www.ansible.com"
+  - name: "Python"
+    url: "https://www.python.org/downloads"
+
+# What Includes to display
+what_includes:
+  - name: "s3fs"
+  - name: "openssl"
+  - name: "groff"
+  - name: "telnet"
+  - name: "htop"
+  - name: "wget"
+  - name: "python3-pip"
+  - name: "zip"
+  - name: "unzip"
+  - name: "fuse"
+  - name: "libssl-dev"
+  - name: "pkg-config"
+  - name: "build-essential"
+  - name: "libfuse-dev"
+  - name: "libcurl4-openssl-dev"
+  - name: "libxml2-dev"
+  - name: "mime-support"
+  - name: "automake"
+  - name: "libtool"
+  - name: "ntp"
+
+#  description of this project
+description: |-
+  This ansible role install S3 SFTP and S3FS/Fuse packages On Ubuntu.
+# yamllint enable
+# How to use this project
+usage: |-
+  ```yaml
+    - hosts: localhost
+      remote_user: root
+      become: true
+      roles:
+        - ansible-role-s3-sftp
+  ```
+
+# How to install project
+installation: |-
+  ```console
+    $ ansible-galaxy install clouddrove.ansible-role-s3-sftp
+  ```
+
+
+variables: |-
+  ```yaml
+    zsh_theme: steeef
+    state: present
+    aws: true
+
+    user: false
+    username: ec2-user
+
+  ```

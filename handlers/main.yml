@@ -1,0 +1,12 @@
+---
+- name: SFTP-Server | Restart sshd
+  service:
+    name: "{{ 'ssh' if ansible_os_family == 'Debian' else 'sshd' }}"
+    state: restarted
+
+- name: S3FS | Restart s3fs
+  become: true
+  service:
+    name: s3fs
+    state: restarted
+    enabled: true

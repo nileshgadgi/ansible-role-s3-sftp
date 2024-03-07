@@ -1,0 +1,14 @@
+---
+s3fs_dependencies:
+  - unzip
+  - fuse
+  - libssl-dev
+  - pkg-config
+  - build-essential
+  - libfuse-dev
+  - libcurl4-openssl-dev
+  - libxml2-dev
+  - mime-support
+  - automake
+  - libtool
+  - ntp

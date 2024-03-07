@@ -1,0 +1,39 @@
+---
+galaxy_info:
+  author: Anmol Nagpal
+  description: This ansible role install sftp in the ubuntu and setup users and groups accordingly and mount aws s3 bucket to all users
+  company: "CloudDrove Inc."
+  license: "license (BSD, MIT)"
+
+  min_ansible_version: 2.1
+
+  # If this a Container Enabled role, provide the minimum Ansible Container version.
+  # min_ansible_container_version:
+
+  #
+  # Provide a list of supported platforms, and for each platform a list of versions.
+  # If you don't wish to enumerate all versions for a particular platform, use 'all'.
+  # To view available platforms and versions (or releases), visit:
+  # https://galaxy.ansible.com/api/v1/platforms/
+  #
+  platforms:
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - focal
+
+  galaxy_tags:
+    - server
+    - cloud
+    - amazon
+    - aws
+    - sftp
+    - s3
+    - storage
+    - ubuntu
+    - linux
+    - debian
+    - apt
+
+dependencies: []

@@ -1,0 +1,13 @@
+---
+
+# Download Required Packages
+- include_tasks: apt-pkg.yml
+
+# Configure SFTP
+- include_tasks: sftp.yml
+
+# User Configurations
+- include_tasks: user.yml
+
+# Setup and Mount S3FS
+- include_tasks: s3fs.yml
